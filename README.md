@@ -1,4 +1,4 @@
-# 🚀 Desafio Técnico One Investimentos
+# 🚀 Kanban Board
 
 <div align="center">
 
