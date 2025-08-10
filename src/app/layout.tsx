@@ -4,7 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/Providers/Providers";
 
 export const metadata: Metadata = {
-  title: "Desafio Técnico - One Investimentos",
+  title: "Kanban Board",
 };
 
 export default function RootLayout({

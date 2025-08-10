@@ -77,7 +77,7 @@ export function Sidebar({
                     <div className="w-8 h-8 bg-amber-600 rounded-lg flex items-center justify-center">
                         <span className="text-white font-bold text-sm">O</span>
                     </div>
-                    <h1 className="text-lg font-semibold">One Investment Test</h1>
+                    <h1 className="text-lg font-semibold">Kanban Board</h1>
                 </div>
             </div>
 
