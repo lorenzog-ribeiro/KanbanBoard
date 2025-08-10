@@ -14,11 +14,6 @@
 </div>
 
 ---
-
-## 📋 Visão Geral
-
-Este é um desafio técnico full stack que consiste no desenvolvimento de um sistema de cadastro de projetos e tarefas. A aplicação deve permitir que os usuários criem projetos e adicionem tarefas relacionadas a cada projeto.
-
 ### ✨ Principais Funcionalidades
 
 - 🎯 **Gerenciamento Completo de Projetos** - CRUD completo com interface intuitiva
@@ -124,52 +119,6 @@ enum TaskStatus {
 }
 
 ```
-
----
-
-## 🎯 Especificação do Desafio
-
-Desenvolver um sistema full stack de gerenciamento de projetos e tarefas utilizando Next.js, Hono e PostgreSQL. O sistema deve permitir operações CRUD completas em projetos e suas respectivas tarefas, com interface responsiva e arquitetura escalável. Os projetos possuem relacionamento one-to-many com tarefas, garantindo integridade referencial através de cascata na exclusão.
-
----
-
-## ✅ Checklist de Funcionalidades
-
-### 🔧 Backend APIs
-
-- [x] API para criação de projetos
-
-- [x] API para listagem de projetos
-
-- [x] API para exclusão de projetos
-
-- [x] API para criação de tarefas vinculadas a projetos
-
-- [x] API para listagem de tarefas por projeto
-
-- [x] API para exclusão de tarefas
-
-### 🎨 Frontend Interfaces
-
-- [x] Interface para cadastro de projetos
-
-- [x] Interface para visualização/listagem de projetos
-
-- [x] Interface para cadastro de tarefas por projeto
-
-- [x] Interface para visualização/listagem de tarefas associadas a projetos
-
-- [x] Funcionalidade de exclusão de projetos e tarefas
-
-### 🎁 Funcionalidades Extras Implementadas
-
-- [x] **Sistema de Prioridades** - Low, Medium, High com cores distintivas
-- [x] **Drag & Drop Avançado** - Mudança de status via arrastar e soltar
-- [x] **Contadores Dinâmicos** - Atualização automática sem refresh
-- [x] **Estados de Loading** - Feedback visual durante operações
-- [x] **Tratamento de Erros** - Mensagens informativas via toast
-- [x] **Interface Responsiva** - Otimizada para mobile e desktop
-
 ---
 
 ## 🚀 Guia de Instalação
@@ -366,32 +315,6 @@ pnpm run test
 - ✅ **Testes de Integração** - Fluxos completos de CRUD
 
 ---
-
-
-## 🚀 Principais Melhorias Implementadas
-
-### Performance
-
-- **Otimização de API**: Redução de 8 para 1 chamada na inicialização
-- **Estado Local**: Contadores atualizados instantaneamente
-- **Lazy Loading**: Carregamento sob demanda de componentes
-
-### UX/UI
-
-- **Drag & Drop**: Interface fluida para reorganização de tarefas
-- **Feedback Visual**: Loading states e animações
-- **Responsividade**: Layout adaptativo para todos os dispositivos
-- **Acessibilidade**: Navegação por teclado e screen readers
-
-### Arquitetura
-
-- **Separação de Responsabilidades**: APIs, tipos e componentes organizados
-- **Reutilização**: Componentes e hooks modulares
-- **Tipagem Forte**: TypeScript em todo o projeto
-- **Tratamento de Erros**: Sistema robusto de error boundaries
-
----
-
 ## 📝 Scripts Disponíveis
 
 ```bash
