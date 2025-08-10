@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id    Int    @id @default(autoincrement())
+  name  String
+  tasks Task[]
+
+  @@map("projects")
+}
+
+model Task {
+  id          Int         @id @default(autoincrement())
+  name        String
+  description String
+  priority    Priority?
+  status      TaskStatus?
+
+  projectId   Int
+  project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("tasks")
+}
+
+enum Priority {
+  baixa
+  media
+  alta
+
+  @@map("priority")
+}
+
+enum TaskStatus {
+  a_fazer
+  em_progresso
+  concluido
+
+  @@map("task_status")
+}
